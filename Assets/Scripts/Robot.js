@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
 private var animator: Animator;
-public var speed: float = 0.5;
-public var rotationSpeed: float = 0.5;
+public var speed: float = 10;
+public var rotationSpeed: float = 75;
 
 function Start () {
 	animator = this.GetComponent(Animator);
@@ -24,21 +24,22 @@ function Update () {
 }
 
 private function turnLeft() {
-	this.transform.rotation.y += this.rotationSpeed;
+	this.transform.Rotate(Vector3.down * Time.deltaTime * this.rotationSpeed);
 }
 
 private function turnRight() {
-	this.transform.rotation.y -= this.rotationSpeed;
+	this.transform.Rotate(Vector3.up * Time.deltaTime * this.rotationSpeed);
 }
 
 private function moveForward() {
 	animator.SetInteger('Speed', 2);
-	this.transform.position.z -= this.speed;
-	this.transform.rotation.y = 180;
+	//Debug.Log();
+	//this.transform.rotation.eulerAngles + Vector
+	//this.transform.Translate(
+	this.transform.position.z -= this.speed * Time.deltaTime;
 }
 
 private function moveBackward() {
 	animator.SetInteger('Speed', 2);
-	this.transform.position.z += this.speed;
-	this.transform.rotation.y = 0;
+	this.transform.position.z += this.speed * Time.deltaTime;
 }

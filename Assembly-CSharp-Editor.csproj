@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F7BE11C1-11F5-48F4-7482-7E4D84F0020A}</ProjectGuid>
+    <ProjectGuid>{89350DBE-1540-66D2-63CD-2927515185D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -46,19 +46,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ToonBot\ToonBot(Free) Assets\Controller\RobotTestScriptFree.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\GameObjectExtensions.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\GameObjectMergeActions.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\GitMergeWindow.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeAction.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionChangeValues.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionDeleteComponent.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionDeleteGameObject.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionExistence.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionNewComponent.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionNewGameObject.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeActionParenting.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeManager.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeManagerPrefab.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\MergeManagerScene.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\ObjectDictionaries.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\ObjectExtensions.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\ObjectIDFinder.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\Resources.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\SerializedPropertyExtensions.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\VCS.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\VCSException.cs" />
+     <Compile Include="Assets\GitMerge-for-Unity-master\Editor\VCSGit.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\GitMerge-for-Unity-master\Editor\Resources\Licenses.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Mr. Mo Base Character\Readme.txt" />
      <None Include="Assets\readme.txt" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/GreatGame/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Common">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{F7BE11C1-11F5-48F4-7482-7E4D84F0020A}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

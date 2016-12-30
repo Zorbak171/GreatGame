@@ -24,12 +24,11 @@ function Update () {
 }
 
 private function turnLeft() {
-	const 
-	this.transform.rotation = ;
+	this.transform.rotation.y += this.rotationSpeed;
 }
 
 private function turnRight() {
-	this.transform.rotation.y += this.rotationSpeed;
+	this.transform.rotation.y -= this.rotationSpeed;
 }
 
 private function moveForward() {

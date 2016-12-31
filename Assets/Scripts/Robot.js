@@ -1,6 +1,9 @@
 ﻿#pragma strict
 
 private var animator: Animator;
+private var timeAlive: int = 0;
+private var lastJumpTime: int = 0;
+
 public var speed: float;
 public var rotationSpeed: float;
 
@@ -20,6 +23,40 @@ function Update () {
 		turnLeft();
 	else if(Input.GetKey(KeyCode.D))
 		turnRight();
+
+	if(canJump() && Input.GetKey(KeyCode.Space))
+		this.lastJumpTime = jump();
+	else if(Input.GetKey(KeyCode.LeftControl))
+		crouch();
+	else
+		uncrouch();
+	
+	this.timeAlive += Time.deltaTime * 1000;
+}
+
+private function uncrouch() {
+	animator.SetBool('Crouch', false);
+}
+
+private function crouch() {
+	animator.SetBool('Crouch', true);
+}
+
+private function canJump() {
+	if(this.timeAlive - this.lastJumpTime > 500) {
+		if(animator.GetBool('Jumping')) {
+			animator.SetBool('Jumping', false);
+			this.lastJumpTime = this.timeAlive;
+			return false;
+		}
+		return true;
+	} else
+		return false;
+}
+
+private function jump() {
+	animator.SetBool('Jumping', true);
+	return this.timeAlive;
 }
 
 private function turnLeft() {

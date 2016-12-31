@@ -46,12 +46,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\FireLight.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\Hose.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\SmokeParticles.cs" />
+     <Compile Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+     <Compile Include="Assets\BattleDragon\Dragons\Scripts\Camera\CameraFollow.cs" />
+     <Compile Include="Assets\BattleDragon\Dragons\Scripts\animator_controller.cs" />
+     <Compile Include="Assets\BattleDragon\Dragons\Scripts\animator_settor.cs" />
+     <Compile Include="Assets\BattleDragon\Dragons\Scripts\player_attack.cs" />
+     <Compile Include="Assets\BattleDragon\Dragons\Scripts\player_movement.cs" />
+     <Compile Include="Assets\BattleDragon\Scripts\CameraController.cs" />
      <Compile Include="Assets\ToonBot\ToonBot(Free) Assets\Controller\RobotTestScriptFree.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\BattleDragon\readme.txt" />
+     <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Mr. Mo Base Character\Readme.txt" />
+     <None Include="Assets\BattleDragon\Colosseum\Dust\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
